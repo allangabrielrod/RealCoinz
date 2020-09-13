@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## API
+
+Data provided by <a href="https://coinranking.com">Coinranking</a>
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import { SearchBox } from "./components/search-box/search-box.component";
-import './App.css';
+import { CoinList } from "./components/coin-list/coin-list.component";
+import "./App.css";
 
 class App extends Component {
   constructor() {
@@ -32,7 +33,9 @@ class App extends Component {
             placeholder="Trying to find something ?"
             handleChange={this.handleSearch}
           />
-          {coins.map(coin => <h1>{coin.name}</h1>)}
+          <CoinList 
+            coins={ coins }
+          />
         </div>
     );
   }
