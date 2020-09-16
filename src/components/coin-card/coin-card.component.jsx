@@ -10,7 +10,7 @@ export const CoinCard = ({ coin }) => {
         <div
           className="coin-card" 
           style={{
-              backgroundColor: coin.color, 
+              backgroundColor: coin.color ? coin.color : "#FFF", 
               color: coin.color && "#FFF"
           }}>
           <div className="card-header">
