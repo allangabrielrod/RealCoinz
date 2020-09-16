@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { SearchBox } from "./components/search-box/search-box.component";
+import { Navbar } from "./components/navbar/navbar.component";
 import { CoinList } from "./components/coin-list/coin-list.component";
 import "./App.css";
 
@@ -29,9 +29,8 @@ class App extends Component {
 
     return (
         <div className="App">
-          <SearchBox 
-            placeholder="Trying to find something ?"
-            handleChange={this.handleSearch}
+          <Navbar 
+            handleSearch={this.handleSearch}
           />
           <CoinList 
             coins={ coins }
