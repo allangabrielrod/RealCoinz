@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Navbar } from "./components/navbar/navbar.component";
 import { CoinList } from "./components/coin-list/coin-list.component";
+import { Footer } from "./components/footer/footer.component";
 import "./App.css";
 
 class App extends Component {
@@ -35,6 +36,7 @@ class App extends Component {
           <CoinList 
             coins={ coins }
           />
+          <Footer />
         </div>
     );
   }
