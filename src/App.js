@@ -1,8 +1,12 @@
 import React, { Component } from "react";
+import ReactGA from "react-ga";
 import { Navbar } from "./components/navbar/navbar.component";
 import { CoinList } from "./components/coin-list/coin-list.component";
 import { Footer } from "./components/footer/footer.component";
 import "./App.css";
+
+ReactGA.initialize("UA-178413265-1");
+ReactGA.pageview("/dashboard");
 
 class App extends Component {
   constructor() {
@@ -41,4 +45,5 @@ class App extends Component {
     );
   }
 }
+
 export default App;
