@@ -6,7 +6,9 @@ export const Navbar = ({handleSearch}) => {
     return (
         <nav className="nav">
             <div className="nav-container">
-                <h1 className="nav-brand">RealCoinz</h1>
+                <a href="/" className="nav-brand">
+                    <h1>RealCoinz</h1>
+                </a>
                 <div className="nav-search">
                     <span role="img" aria-hidden="true">&#128270;</span>
                     <SearchBox 

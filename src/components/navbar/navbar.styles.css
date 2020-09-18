@@ -17,6 +17,7 @@
 .nav-brand {
     color: white;
     font-family: 'Kaushan Script', cursive;
+    text-decoration: none;
 }
 
 .nav-search {
