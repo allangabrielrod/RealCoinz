@@ -9,13 +9,10 @@ export const Navbar = ({handleSearch}) => {
                 <a href="/" className="nav-brand">
                     <h1>RealCoinz</h1>
                 </a>
-                <div className="nav-search">
-                    <span role="img" aria-hidden="true">&#128270;</span>
-                    <SearchBox 
-                        placeholder="Trying to find something ?"
-                        handleChange={handleSearch}
-                    />
-                </div>
+                <SearchBox 
+                    placeholder="Trying to find something ?"
+                    handleChange={handleSearch}
+                />
             </div>
         </nav>
     );
