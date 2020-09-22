@@ -72,38 +72,42 @@ class App extends Component {
     const {search, coinsData} = this.state;
     const coins = coinsData.filter(coin => (coin.name.toLowerCase().includes(search.toLowerCase())));
 
+    console.log(coins)
     return (
         <div className="App">
           <Navbar 
             handleSearch={this.handleSearch}
           />
-          <div className="sort">
-            <FontAwesomeIcon icon={ faFilter } size="lg"/>
-            <Select
-              handleOption={this.handleSort}
-            >
-              <Option 
-                value="rel" 
-                text="Relevance"
-                icon="faSearch"
-              />
-              <Option 
-                value="name" 
-                text="Name"
-                icon="fa-search"
-              />
-              <Option 
-                value="hPrice" 
-                text="Highest price"
-                icon="fa-search"
-              />
-              <Option 
-                value="lPrice" 
-                text="Lowest price"
-                icon="fa-search"
-              />
-            </Select>
-          </div>
+          { 
+            coins.length &&
+            <div className="sort">
+              <FontAwesomeIcon icon={ faFilter } size="lg"/>
+              <Select
+                handleOption={this.handleSort}
+              >
+                <Option 
+                  value="rel" 
+                  text="Relevance"
+                  icon="faSearch"
+                />
+                <Option 
+                  value="name" 
+                  text="Name"
+                  icon="fa-search"
+                />
+                <Option 
+                  value="hPrice" 
+                  text="Highest price"
+                  icon="fa-search"
+                />
+                <Option 
+                  value="lPrice" 
+                  text="Lowest price"
+                  icon="fa-search"
+                />
+              </Select>
+            </div>
+          }
           <CoinList 
             coins={ coins }
           />
