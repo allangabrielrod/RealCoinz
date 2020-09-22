@@ -1,8 +1,15 @@
 .coin-list {
   width: 90%;
   margin: 0 auto;
+  padding: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+@media(max-width: 560px) {
+  .coin-list {
+    justify-content: center;
+  }
 }
