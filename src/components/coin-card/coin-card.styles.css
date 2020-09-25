@@ -1,17 +1,17 @@
 .coin-card {
   width: 350px;
-  padding: 15px;
-  margin-bottom: 3.4%;
+  margin: 12px 0;
+  padding: 20px;
   border-radius: 5%;
 }
 
 .card-header {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .coin-name {
-  width: 80%;
   text-align: end;
 }
 
