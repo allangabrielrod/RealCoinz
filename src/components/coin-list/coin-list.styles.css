@@ -5,7 +5,13 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.not-found {
+  color: #1e2024;
+  font-size: 2rem;
+  text-align: center;
 }
 
 @media(max-width: 560px) {
