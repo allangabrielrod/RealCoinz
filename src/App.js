@@ -78,7 +78,7 @@ class App extends Component {
             handleSearch={this.handleSearch}
           />
           { 
-            coins.length &&
+            coins.length > 0 &&
             <div className="sort">
               <FontAwesomeIcon icon={ faFilter } size="lg"/>
               <Select
