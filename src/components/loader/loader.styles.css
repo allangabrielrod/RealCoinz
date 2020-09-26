@@ -1,0 +1,19 @@
+.loader {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.loader-brand {
+  color: white;
+  font-size: 3em;
+  font-family: 'Kaushan Script', cursive;
+  align-self: center;
+  animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+  50% {
+      font-size: 4em;
+  }
+}

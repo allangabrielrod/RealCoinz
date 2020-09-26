@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ReactGA from "react-ga";
+import { Loader } from "./components/loader/loader.component";
 import { Navbar } from "./components/navbar/navbar.component";
 import { CoinList } from "./components/coin-list/coin-list.component";
 import { Select } from "./components/select/select.component";
@@ -18,6 +19,7 @@ class App extends Component {
 
     this.state = {
       search: "",
+      isReady: false,
       coinsData: []
     };
   }
@@ -25,7 +27,10 @@ class App extends Component {
   componentDidMount() {
     fetch("https://api.coinranking.com/v1/public/coins")
       .then(response => response.json())
-      .then(data => this.setState({coinsData: data.data.coins}));
+      .then(data => this.setState({
+        coinsData: data.data.coins,
+        isReady: true
+    }));
   }
 
   handleSearch = (event) => {
@@ -69,6 +74,9 @@ class App extends Component {
   }
 
   render() {
+    if (!this.state.isReady)
+      return <Loader />;
+
     const {search, coinsData} = this.state;
     const coins = coinsData.filter(coin => (coin.name.toLowerCase().includes(search.toLowerCase())));
 
