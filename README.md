@@ -1,13 +1,13 @@
 
 <div align="center">
     <a href="https://realcoinz.netlify.app/" target="_blank">
-        <img src="./.github/logo.png"       alt="realcoinz-logo"/>
+        <img src="./github/logo.png"       alt="realcoinz-logo"/>
     </a>
     </br>
     <p>    
     💰 A place where you can check cryptocurrency prices and more
     </p>
-    <img src="./.github/realcoinz.gif"  alt="preview"/>
+    <img src="./github/realcoinz.gif"  alt="preview"/>
 </div>
 
 </br>
